@@ -38,7 +38,7 @@ namespace DoiBanThan
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            fMain f = new fMain();
+            frmMain f = new frmMain();
             this.Hide();
             f.ShowDialog();
             this.Show();

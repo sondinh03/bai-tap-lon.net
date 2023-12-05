@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DoiBanThan
 {
-    public partial class fThemTL : Form
+    public partial class frmTheLoai : Form
     {
-        public fThemTL()
+        public frmTheLoai()
         {
             InitializeComponent();
         }

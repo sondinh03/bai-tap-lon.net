@@ -1,6 +1,6 @@
 ﻿namespace DoiBanThan
 {
-    partial class fThemTL
+    partial class frmTheLoai
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnLuuTheLoai = new System.Windows.Forms.Button();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -55,16 +55,46 @@
             this.guna2Panel1.Size = new System.Drawing.Size(308, 90);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(101, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(154, 46);
+            this.label1.TabIndex = 1;
+            this.label1.Text = " Thể Loại";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.guna2Panel2.Controls.Add(this.button2);
-            this.guna2Panel2.Controls.Add(this.button1);
+            this.guna2Panel2.Controls.Add(this.btnHuy);
+            this.guna2Panel2.Controls.Add(this.btnLuuTheLoai);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 231);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(308, 79);
             this.guna2Panel2.TabIndex = 1;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Location = new System.Drawing.Point(194, 26);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(80, 29);
+            this.btnHuy.TabIndex = 1;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnLuuTheLoai
+            // 
+            this.btnLuuTheLoai.Location = new System.Drawing.Point(43, 26);
+            this.btnLuuTheLoai.Name = "btnLuuTheLoai";
+            this.btnLuuTheLoai.Size = new System.Drawing.Size(83, 29);
+            this.btnLuuTheLoai.TabIndex = 0;
+            this.btnLuuTheLoai.Text = "Lưu";
+            this.btnLuuTheLoai.UseVisualStyleBackColor = true;
             // 
             // guna2Panel3
             // 
@@ -76,24 +106,22 @@
             this.guna2Panel3.Size = new System.Drawing.Size(308, 141);
             this.guna2Panel3.TabIndex = 2;
             // 
-            // button1
+            // label2
             // 
-            this.button1.Location = new System.Drawing.Point(44, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Thêm ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(24, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 28);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Tên Thể Loại";
             // 
-            // button2
+            // textBox1
             // 
-            this.button2.Location = new System.Drawing.Point(194, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 29);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Hủy";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.textBox1.Location = new System.Drawing.Point(28, 69);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(263, 27);
+            this.textBox1.TabIndex = 0;
             // 
             // guna2PictureBox1
             // 
@@ -108,37 +136,9 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // label1
+            // frmTheLoai
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(101, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 37);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Thêm Thể Loại";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(28, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 23);
-            this.textBox1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tên Thể Loại";
-            // 
-            // fThemTL
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(308, 310);
             this.Controls.Add(this.guna2Panel3);
@@ -147,7 +147,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "fThemTL";
+            this.Name = "frmTheLoai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fThemTL";
             this.guna2Panel1.ResumeLayout(false);
@@ -164,8 +164,8 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnLuuTheLoai;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label1;

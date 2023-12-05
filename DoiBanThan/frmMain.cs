@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace DoiBanThan
 {
-    public partial class fMain : Form
+    public partial class frmMain : Form
     {
-        public fMain()
+        public frmMain()
         {
             InitializeComponent();
         }
 
         private void fMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
+            
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace DoiBanThan
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
-            fThemTL f = new fThemTL();
+            frmTheLoai f = new frmTheLoai();
             f.ShowDialog();
             this.Show();
         }
@@ -37,6 +37,13 @@ namespace DoiBanThan
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnThemBan_Click(object sender, EventArgs e)
+        {
+            frmBanAn f = new frmBanAn();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }
