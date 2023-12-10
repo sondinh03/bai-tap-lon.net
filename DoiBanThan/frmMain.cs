@@ -24,7 +24,11 @@ namespace DoiBanThan
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
-           
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát khỏi hệ thống không ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
@@ -42,6 +46,18 @@ namespace DoiBanThan
         private void btnThemBan_Click(object sender, EventArgs e)
         {
             frmBanAn f = new frmBanAn();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void tabChucNang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ImageButton1_Click_1(object sender, EventArgs e)
+        {
+            frmSanPham f = new frmSanPham();
             f.ShowDialog();
             this.Show();
         }
