@@ -52,10 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmBanAn.cs">
+    <Compile Include="Add\frmBanAn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBanAn.Designer.cs">
+    <Compile Include="Add\frmBanAn.Designer.cs">
       <DependentUpon>frmBanAn.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
@@ -70,15 +70,15 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTheLoai.cs">
+    <Compile Include="Add\frmTheLoai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTheLoai.Designer.cs">
+    <Compile Include="Add\frmTheLoai.Designer.cs">
       <DependentUpon>frmTheLoai.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmBanAn.resx">
+    <EmbeddedResource Include="Add\frmBanAn.resx">
       <DependentUpon>frmBanAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
@@ -87,7 +87,7 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTheLoai.resx">
+    <EmbeddedResource Include="Add\frmTheLoai.resx">
       <DependentUpon>frmTheLoai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
