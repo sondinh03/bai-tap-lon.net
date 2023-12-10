@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DoiBanThan
+namespace DoiBanThan.Add
 {
-    public partial class frmGiaoDoAn : Form
+    public partial class frmShip : Form
     {
-        public frmGiaoDoAn()
+        public frmShip()
         {
             InitializeComponent();
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

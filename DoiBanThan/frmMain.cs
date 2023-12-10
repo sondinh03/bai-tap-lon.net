@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoiBanThan.Add;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,6 +66,13 @@ namespace DoiBanThan
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmShip f = new frmShip();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }
