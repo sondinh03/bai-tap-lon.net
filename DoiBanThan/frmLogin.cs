@@ -27,7 +27,7 @@ namespace DoiBanThan
             DialogResult result = MessageBox.Show("Ban co chac muon thoat khong !", "Thong Bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(result == DialogResult.Yes)
             {
-                Close();
+                 Close();
             }
         }
 
