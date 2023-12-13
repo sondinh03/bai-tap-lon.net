@@ -51,6 +51,12 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.btnThanhToan = new System.Windows.Forms.Button();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnMangVe = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -66,17 +72,19 @@
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnThemBan = new Guna.UI2.WinForms.Guna2ImageButton();
             this.tabTheLoai = new System.Windows.Forms.TabPage();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.grvTheLoai = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.gr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvIdTheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTenTheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTimKiemTheLoai = new System.Windows.Forms.TextBox();
+            this.btnTimKiemTheLoai = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnThemTheLoai = new Guna.UI2.WinForms.Guna2ImageButton();
             this.tabSanPham = new System.Windows.Forms.TabPage();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DataGridView3 = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -91,27 +99,18 @@
             this.txtTkSanPham = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnTkSanPham = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnThemSanPham = new Guna.UI2.WinForms.Guna2ImageButton();
             this.tabBaoCao = new System.Windows.Forms.TabPage();
             this.tabCaiDat = new System.Windows.Forms.TabPage();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblNguoiDung = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btnThemBan = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnTimKiemTheLoai = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnThemTheLoai = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnTkSanPham = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnThemSanPham = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnThanhToan = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.tabChucNang.SuspendLayout();
@@ -271,6 +270,59 @@
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(890, 71);
             this.guna2Panel8.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(217, 34);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(28, 28);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "%";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(36, 30);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(175, 34);
+            this.textBox2.TabIndex = 4;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(32, 7);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(80, 20);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "Chiết Khấu";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(540, 30);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(175, 34);
+            this.textBox1.TabIndex = 2;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(536, 7);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(75, 20);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "Tổng Tiền";
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.Location = new System.Drawing.Point(721, 7);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(164, 57);
+            this.btnThanhToan.TabIndex = 0;
+            this.btnThanhToan.Text = "Thanh Toán";
+            this.btnThanhToan.UseVisualStyleBackColor = true;
             // 
             // guna2Panel7
             // 
@@ -479,6 +531,21 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Danh Sách Bàn Ăn";
             // 
+            // btnThemBan
+            // 
+            this.btnThemBan.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnThemBan.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnThemBan.Image = global::DoiBanThan.Properties.Resources.add;
+            this.btnThemBan.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnThemBan.ImageRotate = 0F;
+            this.btnThemBan.ImageSize = new System.Drawing.Size(55, 55);
+            this.btnThemBan.Location = new System.Drawing.Point(52, 102);
+            this.btnThemBan.Name = "btnThemBan";
+            this.btnThemBan.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnThemBan.Size = new System.Drawing.Size(55, 55);
+            this.btnThemBan.TabIndex = 2;
+            this.btnThemBan.Click += new System.EventHandler(this.btnThemBan_Click);
+            // 
             // tabTheLoai
             // 
             this.tabTheLoai.Controls.Add(this.guna2Panel3);
@@ -497,6 +564,7 @@
             this.tabTheLoai.TabIndex = 1;
             this.tabTheLoai.Text = "Thể Loại";
             this.tabTheLoai.UseVisualStyleBackColor = true;
+            this.tabTheLoai.Click += new System.EventHandler(this.tabTheLoai_Click);
             // 
             // guna2Panel3
             // 
@@ -524,9 +592,8 @@
             this.grvTheLoai.ColumnHeadersHeight = 50;
             this.grvTheLoai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.grvTheLoai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.gr,
-            this.Column1,
-            this.Column2});
+            this.dgvIdTheLoai,
+            this.dgvTenTheLoai});
             dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -567,33 +634,23 @@
             this.grvTheLoai.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.grvTheLoai.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // gr
+            // dgvIdTheLoai
             // 
-            this.gr.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.gr.FillWeight = 80F;
-            this.gr.HeaderText = "STT";
-            this.gr.MinimumWidth = 80;
-            this.gr.Name = "gr";
-            this.gr.ReadOnly = true;
-            this.gr.Width = 80;
+            this.dgvIdTheLoai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvIdTheLoai.FillWeight = 150F;
+            this.dgvIdTheLoai.HeaderText = "ID";
+            this.dgvIdTheLoai.MinimumWidth = 150;
+            this.dgvIdTheLoai.Name = "dgvIdTheLoai";
+            this.dgvIdTheLoai.ReadOnly = true;
+            this.dgvIdTheLoai.Width = 150;
             // 
-            // Column1
+            // dgvTenTheLoai
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Column1.FillWeight = 150F;
-            this.Column1.HeaderText = "ID";
-            this.Column1.MinimumWidth = 150;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 150;
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 68.2906F;
-            this.Column2.HeaderText = "Tên Thể Loại";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.dgvTenTheLoai.FillWeight = 68.2906F;
+            this.dgvTenTheLoai.HeaderText = "Tên Thể Loại";
+            this.dgvTenTheLoai.MinimumWidth = 6;
+            this.dgvTenTheLoai.Name = "dgvTenTheLoai";
+            this.dgvTenTheLoai.ReadOnly = true;
             // 
             // guna2Separator1
             // 
@@ -638,6 +695,39 @@
             this.txtTimKiemTheLoai.Name = "txtTimKiemTheLoai";
             this.txtTimKiemTheLoai.Size = new System.Drawing.Size(212, 34);
             this.txtTimKiemTheLoai.TabIndex = 5;
+            this.txtTimKiemTheLoai.TextChanged += new System.EventHandler(this.txtTimKiemTheLoai_TextChanged);
+            // 
+            // btnTimKiemTheLoai
+            // 
+            this.btnTimKiemTheLoai.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnTimKiemTheLoai.HoverState.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnTimKiemTheLoai.Image = global::DoiBanThan.Properties.Resources.search;
+            this.btnTimKiemTheLoai.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnTimKiemTheLoai.ImageRotate = 0F;
+            this.btnTimKiemTheLoai.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnTimKiemTheLoai.IndicateFocus = true;
+            this.btnTimKiemTheLoai.Location = new System.Drawing.Point(817, 118);
+            this.btnTimKiemTheLoai.Name = "btnTimKiemTheLoai";
+            this.btnTimKiemTheLoai.PressedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnTimKiemTheLoai.Size = new System.Drawing.Size(29, 29);
+            this.btnTimKiemTheLoai.TabIndex = 11;
+            this.btnTimKiemTheLoai.Click += new System.EventHandler(this.btnTimKiemTheLoai_Click);
+            // 
+            // btnThemTheLoai
+            // 
+            this.btnThemTheLoai.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnThemTheLoai.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnThemTheLoai.Image = global::DoiBanThan.Properties.Resources.add;
+            this.btnThemTheLoai.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnThemTheLoai.ImageRotate = 0F;
+            this.btnThemTheLoai.ImageSize = new System.Drawing.Size(55, 55);
+            this.btnThemTheLoai.IndicateFocus = true;
+            this.btnThemTheLoai.Location = new System.Drawing.Point(52, 102);
+            this.btnThemTheLoai.Name = "btnThemTheLoai";
+            this.btnThemTheLoai.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnThemTheLoai.Size = new System.Drawing.Size(55, 55);
+            this.btnThemTheLoai.TabIndex = 8;
+            this.btnThemTheLoai.Click += new System.EventHandler(this.btnThemTheLoai_Click);
             // 
             // tabSanPham
             // 
@@ -823,6 +913,36 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Danh Sách Sản Phẩm";
             // 
+            // btnTkSanPham
+            // 
+            this.btnTkSanPham.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnTkSanPham.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnTkSanPham.Image = global::DoiBanThan.Properties.Resources.search;
+            this.btnTkSanPham.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnTkSanPham.ImageRotate = 0F;
+            this.btnTkSanPham.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnTkSanPham.Location = new System.Drawing.Point(817, 118);
+            this.btnTkSanPham.Name = "btnTkSanPham";
+            this.btnTkSanPham.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnTkSanPham.Size = new System.Drawing.Size(35, 34);
+            this.btnTkSanPham.TabIndex = 4;
+            this.btnTkSanPham.UseTransparentBackground = true;
+            // 
+            // btnThemSanPham
+            // 
+            this.btnThemSanPham.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnThemSanPham.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnThemSanPham.Image = global::DoiBanThan.Properties.Resources.add;
+            this.btnThemSanPham.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnThemSanPham.ImageRotate = 0F;
+            this.btnThemSanPham.ImageSize = new System.Drawing.Size(55, 55);
+            this.btnThemSanPham.Location = new System.Drawing.Point(52, 102);
+            this.btnThemSanPham.Name = "btnThemSanPham";
+            this.btnThemSanPham.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnThemSanPham.Size = new System.Drawing.Size(55, 55);
+            this.btnThemSanPham.TabIndex = 1;
+            this.btnThemSanPham.Click += new System.EventHandler(this.guna2ImageButton1_Click_1);
+            // 
             // tabBaoCao
             // 
             this.tabBaoCao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -847,7 +967,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.guna2Panel1.Controls.Add(this.label3);
+            this.guna2Panel1.Controls.Add(this.lblNguoiDung);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox3);
@@ -859,15 +979,26 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1084, 97);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // label3
+            // lblNguoiDung
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(180, 63);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 28);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Xin chào ,Adminn";
+            this.lblNguoiDung.AutoSize = true;
+            this.lblNguoiDung.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNguoiDung.Location = new System.Drawing.Point(180, 63);
+            this.lblNguoiDung.Name = "lblNguoiDung";
+            this.lblNguoiDung.Size = new System.Drawing.Size(165, 28);
+            this.lblNguoiDung.TabIndex = 5;
+            this.lblNguoiDung.Text = "Xin chào ,Adminn";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::DoiBanThan.Properties.Resources.main2;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(22, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(137, 72);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 4;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -911,147 +1042,6 @@
             this.guna2ControlBox1.TabIndex = 0;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
-            // btnThemBan
-            // 
-            this.btnThemBan.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnThemBan.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnThemBan.Image = global::DoiBanThan.Properties.Resources.add;
-            this.btnThemBan.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnThemBan.ImageRotate = 0F;
-            this.btnThemBan.ImageSize = new System.Drawing.Size(55, 55);
-            this.btnThemBan.Location = new System.Drawing.Point(52, 102);
-            this.btnThemBan.Name = "btnThemBan";
-            this.btnThemBan.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnThemBan.Size = new System.Drawing.Size(55, 55);
-            this.btnThemBan.TabIndex = 2;
-            this.btnThemBan.Click += new System.EventHandler(this.btnThemBan_Click);
-            // 
-            // btnTimKiemTheLoai
-            // 
-            this.btnTimKiemTheLoai.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnTimKiemTheLoai.HoverState.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnTimKiemTheLoai.Image = global::DoiBanThan.Properties.Resources.search;
-            this.btnTimKiemTheLoai.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnTimKiemTheLoai.ImageRotate = 0F;
-            this.btnTimKiemTheLoai.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnTimKiemTheLoai.IndicateFocus = true;
-            this.btnTimKiemTheLoai.Location = new System.Drawing.Point(817, 118);
-            this.btnTimKiemTheLoai.Name = "btnTimKiemTheLoai";
-            this.btnTimKiemTheLoai.PressedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnTimKiemTheLoai.Size = new System.Drawing.Size(29, 29);
-            this.btnTimKiemTheLoai.TabIndex = 11;
-            this.btnTimKiemTheLoai.Click += new System.EventHandler(this.guna2ImageButton1_Click);
-            // 
-            // btnThemTheLoai
-            // 
-            this.btnThemTheLoai.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnThemTheLoai.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnThemTheLoai.Image = global::DoiBanThan.Properties.Resources.add;
-            this.btnThemTheLoai.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnThemTheLoai.ImageRotate = 0F;
-            this.btnThemTheLoai.ImageSize = new System.Drawing.Size(55, 55);
-            this.btnThemTheLoai.IndicateFocus = true;
-            this.btnThemTheLoai.Location = new System.Drawing.Point(52, 102);
-            this.btnThemTheLoai.Name = "btnThemTheLoai";
-            this.btnThemTheLoai.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnThemTheLoai.Size = new System.Drawing.Size(55, 55);
-            this.btnThemTheLoai.TabIndex = 8;
-            this.btnThemTheLoai.Click += new System.EventHandler(this.guna2ImageButton2_Click);
-            // 
-            // btnTkSanPham
-            // 
-            this.btnTkSanPham.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnTkSanPham.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnTkSanPham.Image = global::DoiBanThan.Properties.Resources.search;
-            this.btnTkSanPham.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnTkSanPham.ImageRotate = 0F;
-            this.btnTkSanPham.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnTkSanPham.Location = new System.Drawing.Point(817, 118);
-            this.btnTkSanPham.Name = "btnTkSanPham";
-            this.btnTkSanPham.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnTkSanPham.Size = new System.Drawing.Size(35, 34);
-            this.btnTkSanPham.TabIndex = 4;
-            this.btnTkSanPham.UseTransparentBackground = true;
-            // 
-            // btnThemSanPham
-            // 
-            this.btnThemSanPham.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnThemSanPham.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnThemSanPham.Image = global::DoiBanThan.Properties.Resources.add;
-            this.btnThemSanPham.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnThemSanPham.ImageRotate = 0F;
-            this.btnThemSanPham.ImageSize = new System.Drawing.Size(55, 55);
-            this.btnThemSanPham.Location = new System.Drawing.Point(52, 102);
-            this.btnThemSanPham.Name = "btnThemSanPham";
-            this.btnThemSanPham.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnThemSanPham.Size = new System.Drawing.Size(55, 55);
-            this.btnThemSanPham.TabIndex = 1;
-            this.btnThemSanPham.Click += new System.EventHandler(this.guna2ImageButton1_Click_1);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::DoiBanThan.Properties.Resources.main2;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(22, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(137, 72);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 4;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // btnThanhToan
-            // 
-            this.btnThanhToan.Location = new System.Drawing.Point(721, 7);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(164, 57);
-            this.btnThanhToan.TabIndex = 0;
-            this.btnThanhToan.Text = "Thanh Toán";
-            this.btnThanhToan.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(536, 7);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(75, 20);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Tổng Tiền";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(540, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(175, 34);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(36, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 34);
-            this.textBox2.TabIndex = 4;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(32, 7);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(80, 20);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "Chiết Khấu";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(217, 34);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(28, 28);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "%";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1065,6 +1055,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Màn hình chính";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.tabChucNang.ResumeLayout(false);
@@ -1111,7 +1102,7 @@
         private System.Windows.Forms.TabPage tabBaoCao;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.TabPage tabCaiDat;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblNguoiDung;
         private Guna.UI2.WinForms.Guna2ImageButton btnThemTheLoai;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -1143,9 +1134,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
@@ -1169,5 +1157,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvIdTheLoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTenTheLoai;
     }
 }

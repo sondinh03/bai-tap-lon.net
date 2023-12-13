@@ -18,10 +18,47 @@ namespace DoiBanThan
             InitializeComponent();
         }
 
+        public void GetDataTheLoai()
+        {
+            string qry = "select * from tblTheLoai where tenTheLoai like '%"+ txtTimKiemTheLoai.Text +"%'";
+            ListBox lb = new ListBox();
+            lb.Items.Add(dgvIdTheLoai);
+            lb.Items.Add(dgvTenTheLoai);
+
+            MainClass.TaiDuLIeu(qry, grvTheLoai, lb);
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            lblNguoiDung.Text = MainClass.USER;
+            GetDataTheLoai();
+        }
+
+
+        private void btnTimKiemTheLoai_Click(object sender, EventArgs e)
+        {
+            GetDataTheLoai();
+        }
+
+        private void btnThemTheLoai_Click(object sender, EventArgs e)
+        {
+            frmTheLoai frm = new frmTheLoai();
+            frm.ShowDialog();
+        }
+
+
+        private void txtTimKiemTheLoai_TextChanged(object sender, EventArgs e)
+        {
+            //GetDataTheLoai();
+        }
+
+
+
         private void fMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             
         }
+
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
@@ -32,12 +69,7 @@ namespace DoiBanThan
             }
         }
 
-        private void guna2ImageButton2_Click(object sender, EventArgs e)
-        {
-            frmTheLoai f = new frmTheLoai();
-            f.ShowDialog();
-            this.Show();
-        }
+
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
@@ -74,5 +106,16 @@ namespace DoiBanThan
             f.ShowDialog();
             this.Show();
         }
+
+
+
+
+
+        private void tabTheLoai_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

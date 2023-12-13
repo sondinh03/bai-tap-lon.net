@@ -38,10 +38,20 @@ namespace DoiBanThan
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmMain f = new frmMain();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            string tenDangNhap = txtUsername.Text.Trim();
+            string matKhau = txtPass.Text.Trim();
+
+            if (MainClass.KiemTraTaiKhoan(tenDangNhap, matKhau) == false)
+            {
+                MessageBox.Show("Tên đăng nhập và mật khẩu không đúng!");
+                return;
+            }
+            else
+            {
+                this.Hide();
+                frmMain frm = new frmMain();
+                frm.Show();
+            }
         }
     }
 }
