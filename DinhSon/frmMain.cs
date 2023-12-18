@@ -1,5 +1,4 @@
 ﻿using DoiBanThan.Add;
-using DoiBanThan.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,19 +21,9 @@ namespace DoiBanThan
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblNguoiDung.Text = MainClass.USER;
+            GetDataTheLoai();
         }
 
-        public void AddControls(Panel panelTabPage, Form frm)
-        {
-            panelTabPage.Controls.Clear();
-            frm.Dock = DockStyle.Fill;
-            frm.TopLevel = false;
-            panelTabPage.Controls.Add(frm);
-            frm.Show();
-        }
-
-        /*
-        //Tab Thể Loại
         public void GetDataTheLoai()
         {
             string qry = "select * from tblTheLoai where tenTheLoai like '%"+ txtTimKiemTheLoai.Text +"%'";
@@ -57,16 +46,19 @@ namespace DoiBanThan
             GetDataTheLoai();
         }
 
-        private void btnSuaTheLoai_Click(object sender, EventArgs e)
-        {
 
-        }
-        */
 
-        private void btnExit_Click(object sender, EventArgs e)
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát khỏi hệ thống không ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
+
+
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
@@ -104,19 +96,14 @@ namespace DoiBanThan
             this.Show();
         }
 
-        private void tabTheLoai_Enter(object sender, EventArgs e)
+        private void tabTheLoai_Click(object sender, EventArgs e)
         {
-            AddControls(pnlTheLoai, new frmTheLoai());
+
         }
 
-        private void tabBaoCao_Enter(object sender, EventArgs e)
+        private void btnSuaTheLoai_Click(object sender, EventArgs e)
         {
-            AddControls(pnlBaoCao, new frmBaoCao());
-        }
 
-        private void tabCaiDat_Enter(object sender, EventArgs e)
-        {
-            AddControls(pnlCaiDat, new frmCaiDat());
         }
     }
 }

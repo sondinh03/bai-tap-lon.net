@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DoiBanThan
+namespace DoiBanThan.View
 {
-    public partial class frmTheLoai : Form
+    public partial class frmBaoCao : Form
     {
-        public frmTheLoai()
+        public frmBaoCao()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

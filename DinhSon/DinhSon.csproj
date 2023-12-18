@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C72D7F44-7925-46CA-B5D2-46AB07B17849}</ProjectGuid>
+    <ProjectGuid>{9EB2E202-68B8-460C-AAB3-4015D69FDD77}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DoiBanThan</RootNamespace>
-    <AssemblyName>DoiBanThan</AssemblyName>
+    <RootNamespace>DinhSon</RootNamespace>
+    <AssemblyName>DinhSon</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,23 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add\frmBanAn.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add\frmBanAn.Designer.cs">
-      <DependentUpon>frmBanAn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Add\frmShip.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Add\frmShip.Designer.cs">
-      <DependentUpon>frmShip.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -76,56 +64,23 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Add\frmAddTheLoai.cs">
+    <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add\frmAddTheLoai.Designer.cs">
-      <DependentUpon>frmAddTheLoai.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Add\frmSanPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Add\frmSanPham.Designer.cs">
-      <DependentUpon>frmSanPham.cs</DependentUpon>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MainClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\frmCaiDat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmCaiDat.Designer.cs">
-      <DependentUpon>frmCaiDat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\frmBaoCao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmBaoCao.Designer.cs">
-      <DependentUpon>frmBaoCao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\frmTheLoai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmTheLoai.Designer.cs">
-      <DependentUpon>frmTheLoai.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Add\frmBanAn.resx">
-      <DependentUpon>frmBanAn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Add\frmSanPham.resx">
-      <DependentUpon>frmSanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Add\frmShip.resx">
-      <DependentUpon>frmShip.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add\frmAddTheLoai.resx">
-      <DependentUpon>frmAddTheLoai.cs</DependentUpon>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,17 +90,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="View\frmCaiDat.resx">
-      <DependentUpon>frmCaiDat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\frmBaoCao.resx">
-      <DependentUpon>frmBaoCao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\frmTheLoai.resx">
-      <DependentUpon>frmTheLoai.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,33 +104,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\search.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bàn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shopping-cart-add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tags %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ship.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\update.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

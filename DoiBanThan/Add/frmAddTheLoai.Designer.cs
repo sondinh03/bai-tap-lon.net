@@ -1,6 +1,6 @@
 ﻿namespace DoiBanThan
 {
-    partial class frmTheLoai
+    partial class frmAddTheLoai
     {
         /// <summary>
         /// Required designer variable.
@@ -30,17 +30,17 @@
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuuTheLoai = new System.Windows.Forms.Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.txtTenTheLoai = new System.Windows.Forms.TextBox();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -61,10 +61,22 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(101, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 46);
+            this.label1.Size = new System.Drawing.Size(151, 45);
             this.label1.TabIndex = 1;
             this.label1.Text = " Thể Loại";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::DoiBanThan.Properties.Resources.add1;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(83, 55);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // guna2Panel2
             // 
@@ -95,11 +107,12 @@
             this.btnLuuTheLoai.TabIndex = 0;
             this.btnLuuTheLoai.Text = "Lưu";
             this.btnLuuTheLoai.UseVisualStyleBackColor = true;
+            this.btnLuuTheLoai.Click += new System.EventHandler(this.btnLuuTheLoai_Click);
             // 
             // guna2Panel3
             // 
             this.guna2Panel3.Controls.Add(this.label2);
-            this.guna2Panel3.Controls.Add(this.textBox1);
+            this.guna2Panel3.Controls.Add(this.txtTenTheLoai);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 90);
             this.guna2Panel3.Name = "guna2Panel3";
@@ -116,27 +129,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên Thể Loại";
             // 
-            // textBox1
+            // txtTenTheLoai
             // 
-            this.textBox1.Location = new System.Drawing.Point(28, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 27);
-            this.textBox1.TabIndex = 0;
+            this.txtTenTheLoai.Location = new System.Drawing.Point(28, 69);
+            this.txtTenTheLoai.Name = "txtTenTheLoai";
+            this.txtTenTheLoai.Size = new System.Drawing.Size(263, 27);
+            this.txtTenTheLoai.TabIndex = 0;
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::DoiBanThan.Properties.Resources.add1;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(83, 55);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
-            // frmTheLoai
+            // frmAddTheLoai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -147,15 +147,15 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "frmTheLoai";
+            this.Name = "frmAddTheLoai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fThemTL";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -169,7 +169,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox txtTenTheLoai;
     }
 }
